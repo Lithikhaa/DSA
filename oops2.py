@@ -21,6 +21,9 @@ obj1.checkingtype()
 
 # Inheritence
 
+
+# Inheritance allows us to define a class that inherits all the methods and properties from another class.
+
 # Single Inheritence , Single inheritance enables a derived class to inherit properties from a single parent class
 
 class Vehicle:
