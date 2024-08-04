@@ -47,3 +47,41 @@ obj_spr.flight()
 
 obj_ost.intro()
 obj_ost.flight()
+
+
+
+
+
+
+'''Create a base class Animal with a method make_sound. Then, create two subclasses Cat and Cow, each overriding the make_sound
+method to provide specific implementations. Finally, write a function that takes a list of animals 
+and calls the make_sound method for each animal, demonstrating polymorphism.
+
+Requirements:
+Define a base class Animal with a method make_sound that prints a generic message like "Some generic animal sound".
+Define a subclass Cat that overrides the make_sound method to print "Meow".
+Define a subclass Cow that overrides the make_sound method to print "Moo".
+Create a function play_sounds that takes a list of Animal objects and calls the make_sound method for each object.
+Example Usage:'''
+  
+class Animal:
+  def make_sound(self):
+    print('Some generic animal sound')
+    
+class Cat(Animal):
+    
+  def make_sound(self):
+    print('meowwwww')
+    
+class Cow(Animal):
+  def make_sound(self):
+    print('moooo')
+    
+def play_sounds(obj1):
+  for animals in obj1:
+     animals.make_sound()
+    
+    
+obj1 = [Cat(), Cow(), Animal()]
+
+play_sounds(obj1)
